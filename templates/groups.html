@@ -1,0 +1,39 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="courses_section">
+        <div class="container">
+            <h1>Your Active Groups</h1>
+            <div class="col-lg-12 d-flex row mx-auto mb-5">
+                {% for group in groups %}
+                    <div class="col-lg-4">
+                        <div class="card mb-2" style="width: 20rem;">
+                            <img src="{% static 'main/img/Group9.png' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h1 class="card-title">{{ group.name }}</h1>
+                                <hr>
+                                <h4 class="card-title">Teacher:
+                                    <br>{{ group.teacher.user.first_name }} {{ group.teacher.user.first_name }}</h4>
+                                <hr>
+                                <h5 class="card-title">Course: {{ group.course }}</h5>
+                                <hr>
+                                <p class="card-text">Students:</p>
+                                {% for student in group.student.all %}
+                                    <p class="card-text">{{ student.user.first_name }} {{ student.user.last_name }}</p>
+                                {% endfor %}
+                                <h3 class="card-title">Max number of students: {{ group.number_student }}</h3>
+                                <h3>{{ group.student.all }}</h3>
+                                <a href="#" class="btn text-white">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+
+            </div>
+        </div>
+
+    </section>
+
+{% endblock %}
+

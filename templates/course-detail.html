@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+
+{% block content %}
+<div class="container">
+    <main class="main">
+        <h1 class="main-title">About course</h1>
+        <div class="course">
+            <h2 class="course-title">Course</h2>
+            <div class="course-content">
+                <div class="course-content-img-block">
+                    <img src="{{ course.img.url }}" class="course-img">
+                    <button class="course-btn" type="button">Записаться</button>
+                </div>
+                <div class="about-course">
+                    <div class="course-name">{{ course.title }}</div>
+                    <p class="course-text">{{ course.category }}</p>
+                    <p class="course-text">{{ course.description }}</p>
+                    <p class="course-text">{{ course.price }}</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+{% endblock %}

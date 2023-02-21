@@ -1,0 +1,154 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="first_section">
+        <div class="container">
+            <img src="{% static 'main/img/image1.png' %}" alt="">
+        </div>
+    </section>
+
+    <section class="second_section">
+        <div class="container">
+            <h1>About</h1>
+            <div class="col-lg-12 d-flex p-0">
+                <div class="left_box col-lg-6">
+                    <div class="white_box">
+                        <h1>Школа “Лавита”</h1>
+                    </div>
+                    <p>
+                        Eleifend purus dictum nunc, aenean tincidunt massa libero. Aliquam nullam enim at ac. Imperdiet
+                        risus mi quis vitae non. Cursus scelerisque donec vulputate ante etiam libero donec ridiculus
+                        at. Phasellus at nullam dapibus ut in. Vulputate consequat purus tellus vel cras. Eu
+                        sollicitudin arcu faucibus turpis venenatis.
+                        <br>
+                        Aliquet auctor tempus, erat at interdum eu. Sapien amet, amet sit non at sodales volutpat.
+                        Cursus et laoreet eget velit a tortor eu nibh mattis. Mi facilisi ultrices maecenas id.
+                    </p>
+                </div>
+                <div class="right_box col-lg-6">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="third_section">
+        <div class="container">
+            <h1>Courses</h1>
+            <div class="col-lg-12 d-flex mb-5">
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img src="{% static 'main/img/rectangl.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Massa fringilla rhoncus purus gravida magnis. </h5>
+                            <p class="card-text">
+                                Sed viverra in nulla duis elit purus urna.
+                                Enim volutpat nisi, sit eget sed consectetur consectetur.
+                                Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                            </p>
+                            <a href="#" class="btn text-white">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img src="{% static 'main/img/rectangl.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Massa fringilla rhoncus purus gravida magnis. </h5>
+                            <p class="card-text">
+                                Sed viverra in nulla duis elit purus urna.
+                                Enim volutpat nisi, sit eget sed consectetur consectetur.
+                                Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                            </p>
+                            <a href="#" class="btn text-white">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 20rem;">
+                        <img src="{% static 'main/img/rectangl.png' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Massa fringilla rhoncus purus gravida magnis. </h5>
+                            <p class="card-text">
+                                Sed viverra in nulla duis elit purus urna.
+                                Enim volutpat nisi, sit eget sed consectetur consectetur.
+                                Massa turpis enim, pellentesque amet morbi sagittis. Euismod morbi
+                            </p>
+                            <a href="#" class="btn text-white">Подробнее</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="h_contact" id="h_contact">
+        <div class="container">
+            <h1>Contact</h1>
+            <div class="h_container">
+                <div class="h_contact_info">
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h1>Phone number</h1>
+                            <a href="tel:+998330087078">+998 330 087 087</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="text">
+                            <h1>Email Address</h1>
+                            <a href="mailto:jackodilov@gmail.com">jackodilov@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="text">
+                            <h1>Fax Address</h1>
+                            <p>+9999 9087 123</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="text">
+                            <h1>Location</h1>
+                            <p>123 Business Avenue, NYC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact_form">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="inputbox">
+                            <input type="text" required="required" name="name">
+                            <span>Your Name</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required="required" name="phone">
+                            <span>Phone</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="email" required="required" name="email">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required="required" name="subject">
+                            <span>Subject</span>
+                        </div>
+                        <div class="inputbox">
+                            <textarea required rows="5" name="message"></textarea>
+                            <span>Type your message...</span>
+                        </div>
+                        <div class="inputbox">
+                            <input type="submit" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

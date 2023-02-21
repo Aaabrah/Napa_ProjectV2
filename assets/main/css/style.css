@@ -1,0 +1,310 @@
+:root {
+    --main_color: #EC1B2E;
+}
+
+.navbar .container .collapse {
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+.navbar a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: var(--main_color);
+}
+
+.first_section img {
+    margin: 20px auto;
+}
+
+.second_section .container > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 170px 0 50px 0;
+}
+
+.second_section .left_box {
+    width: 638px;
+    height: 405px;
+    border: 10px solid red;
+}
+
+.second_section .left_box .white_box {
+    position: relative;
+    top: -33px;
+    left: 20px;
+    width: 410px;
+    height: 67px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.second_section .left_box div h1 {
+    font-size: 2.9rem;
+    font-weight: 800;
+}
+
+.second_section .right_box {
+    background-image: url("../Group9.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.lesson h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 170px 0 50px 0;
+}
+
+* {
+    text-decoration: none
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: var(--main_color);
+}
+
+.navbar .container .collapse {
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+.navbar a {
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar a:hover {
+    color: var(--main_color);
+}
+
+.first_section img {
+    margin: 20px auto;
+}
+
+.second_section .container > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 170px 0 50px 0;
+}
+
+.second_section .left_box {
+    width: 638px;
+    height: 405px;
+    border: 10px solid red;
+}
+
+.second_section .left_box .white_box {
+    position: relative;
+    top: -33px;
+    left: 20px;
+    width: 410px;
+    height: 67px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.second_section .left_box div h1 {
+    font-size: 2.9rem;
+    font-weight: 800;
+}
+
+.second_section .right_box {
+    background-image: url("../Group9.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.third_section .container > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 170px 0 50px 0;
+}
+
+.third_section .card-body a {
+    background-color: var(--main_color);
+    display: flex;
+    justify-content: center;
+}
+
+.h_contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.h_contact .container > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 110px 0 50px 0;
+}
+
+.h_contact .content > h1 {
+    margin: 27px 0 10px 0;
+    text-transform: capitalize;
+    font-size: 3.25rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.h_contact .content > p {
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.h_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto 0 auto;
+
+}
+
+.h_container .h_contact_info {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.h_container .h_contact_info .box {
+    position: relative;
+    padding: 10px 0;
+    display: flex;
+}
+
+.h_container .h_contact_info .box .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid var(--main_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.h_container .h_contact_info .box .icon i {
+    font-size: 1.375rem;
+    color: var(--main_color);
+}
+
+.h_container .h_contact_info .box .text {
+    display: flex;
+    margin-left: 20px;
+    color: var(--main_color);
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.h_container .h_contact_info .box .text h1 {
+    font-size: 1.8rem;
+    margin-bottom: 3px;
+    font-weight: 400;
+    color: var(--main_color);
+}
+
+.h_container .h_contact_info .box .text p {
+    font-weight: 400;
+    margin: 0;
+}
+
+.h_container .contact_form {
+    width: 60%;
+    padding: 0 30px;
+    margin-top: 50px;
+}
+
+.h_container .contact_form h2 {
+    font-size: 1.875rem;
+    font-weight: 500;
+}
+
+.h_container .contact_form p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.contact_form .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contact_form .inputbox input,
+.contact_form .inputbox textarea {
+    width: 100%;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+    resize: none;
+}
+
+.contact_form .inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: var(--main_color);
+}
+
+.contact_form .inputbox input:focus ~ span,
+.contact_form .inputbox input:valid ~ span,
+.contact_form .inputbox textarea:focus ~ span,
+.contact_form .inputbox textarea:valid ~ span {
+    color: var(--main_color);
+    font-size: 1rem;
+    transform: translateY(-25px);
+}
+
+.contact_form .inputbox input[type="submit"] {
+    width: 180px;
+    background: var(--main_color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.225rem;
+    border-radius: 10px;
+    margin-left: 35px;
+}
+
+.courses_section .container > h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--main_color);
+    margin: 170px 0 50px 0;
+    text-align: center;
+}
+
+.courses_section .card-body a {
+    background-color: var(--main_color);
+    display: flex;
+    justify-content: center;
+}
+
+.courses_section .container .col-lg-12 > .col-lg-4 {
+    display: flex;
+    flex: 0 0 30%;
+}
